@@ -8,14 +8,14 @@ int main() //Funcion Principal del Programa
 {
     int i;  // Variable de Tipo Entero
 
-    i = 50; // Iniciando la variable con valor cero
+    i = 0; // Iniciando la variable con valor cero
 
-    while (i >=30 ) // Condicion que se va a repetir mientras se cumpla
+    while (i <=30 ) // Condicion que se va a repetir mientras se cumpla
 
     {
 
         cout << i << endl; // Mostrar en pantalla el valor de i
-        i -= 5;    //Incremento de i de 1 en 1
+        i += 5;    //Incremento de i de 1 en 1
     }
 
 

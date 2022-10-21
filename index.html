@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Login</h1>
+        <label for="">Numero de Tarjeta</label>
+        <input type="text" name="u" id="">
+        <label for="">Pin</label>
+        <input type="pin" name="c" id="">
+        <input type="button" value="Ingresar" onclick="login(this.form)">
+        </form>
+        <script>
+            function login(form){
+                if (form.u.value=="0909-22-2183") {
+                    if (form.c.value=="2022") {
+                        location="PROYECTOCAJEROAUTOMATICO.html";
+                    } else {
+                        alert("Error Numero de Pin");
+                    }
+                } else {
+                    alert("Error de Numero de Tarjeta");
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automatico</title>
+
+<style>
+
+    body{
+        background-image: url(https://img.freepik.com/fotos-premium/terminal-cajero-automatico-pared-espacio-copia-lado-derecho_92242-370.jpg?w=2000);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+</style>
+
+
+
+</head>
+<body>
+    
+
+
+      <center>
+        <h1>--------------Bienvenido-----------</h1>
+    <h1>------------Cajero Automatico------------</h1></center>
+    <center>
+    <label for="">1. Saldo</label><br>
+    <input type="text"  name="Cantidad" id="C1" value="10000"><br>
+
+    <label for="">2. Saldo</label><br>
+    <input type="text"  name="Cantidad" id="C2" value="20000"><br>
+
+    </center>
+    <form action="">
+
+        <center>
+
+        <h2>Trasnferencia</h2><br>
+        <input type="text" name="" id="Cant" placeholder="Cantidad"><br>
+        
+        <input type="button" value="Transferencia de cuenta 1 a 2" id="bt2" onclick="formula()"><br>
+        <input type="button" value="Transferencia de cuenta 2 a 1" id="bt3" onclick="formula2()"><br>
+
+        <h2>Depositar</h2><br>
+        <input type="button" value="Depositar a cuenta 1" id="bt4" onclick="formula3()"><br>
+        <input type="button" value="Depositar a cuenta 2" id="bt5" onclick="formula4()"><br>
+
+        <h2>Retirar</h2><br>
+        <input type="button" value="Retirar de cuenta 1" id="bt6" onclick="formula5()"><br>
+        <input type="button" value="Retirar de cuenta 2" id="bt7" onclick="formula6()"><br>
+
+        </center>
+
+
+    </form>
+
+       
+    <script>
+        function formula(){
+            var CantidadT=parseInt(document.getElementById('Cant').value);
+            var Cantidad1=parseInt(document.getElementById('C1').value);
+            var Cantidad2=parseInt(document.getElementById('C2').value);
+            document.getElementById('C1').value=(Cantidad1-CantidadT);
+            document.getElementById('C2').value=(Cantidad2+CantidadT);
+        }
+
+        function formula2(){
+            var CantidadT=parseInt(document.getElementById('Cant').value);
+            var Cantidad1=parseInt(document.getElementById('C1').value);
+            var Cantidad2=parseInt(document.getElementById('C2').value);
+            document.getElementById('C1').value=(Cantidad1+CantidadT);
+            document.getElementById('C2').value=(Cantidad2-CantidadT);
+        }
+
+        function formula3(){
+            var CantidadT=parseInt(document.getElementById('Cant').value);
+            var Cantidad1=parseInt(document.getElementById('C1').value);
+            var Cantidad2=parseInt(document.getElementById('C2').value);
+            document.getElementById('C1').value=(Cantidad1+CantidadT);
+        }
+
+        function formula4(){
+            var CantidadT=parseInt(document.getElementById('Cant').value);
+            var Cantidad1=parseInt(document.getElementById('C1').value);
+            var Cantidad2=parseInt(document.getElementById('C2').value);
+            document.getElementById('C2').value=(Cantidad2+CantidadT);
+        }
+
+        function formula5(){
+            var CantidadT=parseInt(document.getElementById('Cant').value);
+            var Cantidad1=parseInt(document.getElementById('C1').value);
+            var Cantidad2=parseInt(document.getElementById('C2').value);
+            document.getElementById('C1').value=(Cantidad1-CantidadT);
+        }
+
+        function formula6(){
+            var CantidadT=parseInt(document.getElementById('Cant').value);
+            var Cantidad1=parseInt(document.getElementById('C1').value);
+            var Cantidad2=parseInt(document.getElementById('C2').value);
+            document.getElementById('C2').value=(Cantidad2-CantidadT);
+        }
+            
+
+
+    </script>
+</body>
+</html>

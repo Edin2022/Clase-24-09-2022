@@ -21,7 +21,7 @@ int main(){
 
 void escribir ()
 {
-    ofstream miarchivo; // Variabpe tipo de archivo (Sirve para repsentar el flujo de creacion y escritura en ek archivo a crear)
+    ofstream miarchivo; // Variabpe tipo de archivo (Sirve para repsentar el flujo de creacion y escritura en el archivo a crear)
     
     //Abrir el archivo, perso si no existe el archivo se crea y se le nombra con el texto dentro de las comillas
 
