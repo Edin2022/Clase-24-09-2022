@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title>Ahorro de un año</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script>
+ 
+function algoritmo()
+{
+    let ahorro_del_mes, ahorro_en_un_ano, cantidad_depositada;
+    cantidad_depositada = parseFloat (document.formulario1.cantidad_depositada.value);
+    ahorro_en_un_ano=ahorro_en_un_ano+cantidad_depositada;
+    ahorro_del_mes=ahorro_en_un_ano;
+    document.formulario1.ahorro_del_mes.value = ahorro_del_mes;
+}
+ 
+        </script>
+    </head>
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="cantidad_depositada">Ingresa el valor de cantidad depositada:</label>
+                        </td>
+                        <td>
+                            <input name="cantidad_depositada" required="required" step="10000" type="number" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Procesar" type="button" onclick="algoritmo();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ahorro_del_mes">Valor de ahorro del mes:</label>
+                        </td>
+                        <td>
+                            <input name="ahorro_del_mes" step="10" type="number" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
+
